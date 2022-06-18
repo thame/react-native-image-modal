@@ -1,33 +1,7 @@
-# react-native-image-viewing
+# react-native-modal-image
 
-> React Native modal component for viewing images as a sliding gallery.
+Forked from https://github.com/jobtoday/react-native-image-viewing to support web
 
-[![npm version](https://badge.fury.io/js/react-native-image-viewing.svg)](https://badge.fury.io/js/react-native-image-viewing)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-
-- 🔥Pinch zoom for both iOS and Android
-- 🔥Double tap to zoom for both iOS and Android
-- 🔥Supports swipe-to-close animation
-- 🔥Custom header and footer components
-- 🔥Uses VirtualizedList to optimize image loading and rendering
-
-Try with Expo: https://expo.io/@antonkalinin/react-native-image-viewing
-
-<p align="center">
-  <img src="https://github.com/jobtoday/react-native-image-viewing/blob/master/demo.gif?raw=true" height="480" />
-</p>
-
-## Installation
-
-```bash
-yarn add react-native-image-viewing
-```
-
-or
-
-```bash
-npm install --save react-native-image-viewing
-```
 
 ## Usage
 
@@ -56,8 +30,6 @@ const [visible, setIsVisible] = useState(false);
 />
 ```
 
-#### [See Example](https://github.com/jobtoday/react-native-image-viewing/blob/master/example/App.tsx#L62-L80)
-
 ## Props
 
 | Prop name                | Description                                                                                         | Type                                                        | Required |
@@ -79,23 +51,3 @@ const [visible, setIsVisible] = useState(false);
 | `FooterComponent`        | Footer component, gets current `imageIndex` as a prop                                               | component, function                                         | false    |
 
 - type ImageSource = ImageURISource | ImageRequireSource
-
-## Contributing
-
-To start contributing clone this repo and then run inside `react-native-image-viewing` folder:
-
-```bash
-yarn
-```
-
-Then go inside `example` folder and run:
-
-```bash
-yarn & yarn start
-```
-
-This will start packager for expo so you can change `/src/ImageViewing` and see changes in expo example app.
-
-## License
-
-[MIT](LICENSE)
